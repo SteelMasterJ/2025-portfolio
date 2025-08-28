@@ -1,0 +1,38 @@
+$primary-color: #71d7ff;
+$text-color: #fff;
+$text-lighter: #e7e7e7;
+$background-color: #333;
+
+a {
+	&.hover-white-blue-gradient {
+		text-decoration: none;
+		color: transparent; // Make the text color transparent
+		background-image: linear-gradient(to right, $text-color, $primary-color); // Your two colors
+		background-size: 300% 100%; // Double the width
+		background-position: 0 0; // Position to show the first color
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+		transition: background-position 0.3s ease; // Animate the position
+
+		&:hover {
+			background-position: 100% 0; // Slide the gradient over
+		}
+	}
+}
+
+.hover-black-blue-gradient {
+	text-decoration: none;
+	color: transparent; // Make the text color transparent
+	background-image: linear-gradient(to right, $background-color, $primary-color); // Your two colors
+	background-size: 300% 100%; // Double the width
+	background-position: 0 0; // Position to show the first color
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	transition: background-position 0.3s ease; // Animate the position
+
+	&:hover {
+		background-position: 100% 0; // Slide the gradient over
+	}
+}
