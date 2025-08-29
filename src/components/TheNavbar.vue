@@ -22,7 +22,6 @@
 	top: 0;
 	width: 100%;
 	z-index: 1000;
-
 	background-color: $background-color;
 	padding: 1rem 0;
 
