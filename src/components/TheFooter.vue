@@ -10,13 +10,29 @@
 						target="_blank"
 					>
 						<img src="../assets/linkedin.png" alt="linkedin logo" class="footer-icon-link" />
-						&nbsp;LinkedIn
+						&nbsp;linkedin
 					</router-link>
 				</li>
 				<li>
-					<router-link to="/projects" class="hover-black-blue-gradient">projects</router-link>
+					<router-link
+						href="https://docs.google.com/document/d/1MXtAspclKKkcOSu9L5TZgQZmOr-Ep_IAriPMn7QSSpc/edit?pli=1&tab=t.0"
+						class="hover-black-blue-gradient"
+						target="_blank"
+					>
+						<img src="../assets/cv.png" alt="linkedin logo" class="footer-icon-link" />
+						&nbsp;resume
+					</router-link>
 				</li>
-				<li><router-link to="/contact" class="hover-black-blue-gradient">contact</router-link></li>
+				<li>
+					<router-link
+						href="mailto:joseph.steel.iv@gmail.com""
+						class="hover-black-blue-gradient"
+						target="_blank"
+					>
+						<img src="../assets/email.png" alt="linkedin logo" class="footer-icon-link" />
+						&nbsp;email
+					</router-link>
+				</li>
 			</ul>
 		</div>
 	</footer>
