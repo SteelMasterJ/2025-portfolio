@@ -4,34 +4,34 @@
 			<small>joeysteel.com ©{{ currentYear }}</small>
 			<ul class="footer-links">
 				<li>
-					<router-link
-						href="https://www.linkedin.com/in/joseph-steel-6271a955/"
+					<a
+						to="https://www.linkedin.com/in/joseph-steel-6271a955/"
 						class="hover-black-blue-gradient"
 						target="_blank"
 					>
 						<img src="../assets/linkedin.png" alt="linkedin logo" class="footer-icon-link" />
 						&nbsp;linkedin
-					</router-link>
+					</a>
 				</li>
 				<li>
-					<router-link
-						href="https://docs.google.com/document/d/1MXtAspclKKkcOSu9L5TZgQZmOr-Ep_IAriPMn7QSSpc/edit?pli=1&tab=t.0"
+					<a
+						to="https://docs.google.com/document/d/1MXtAspclKKkcOSu9L5TZgQZmOr-Ep_IAriPMn7QSSpc/edit?pli=1&tab=t.0"
 						class="hover-black-blue-gradient"
 						target="_blank"
 					>
 						<img src="../assets/cv.png" alt="linkedin logo" class="footer-icon-link" />
 						&nbsp;resume
-					</router-link>
+					</a>
 				</li>
 				<li>
-					<router-link
-						href="mailto:joseph.steel.iv@gmail.com""
+					<a
+						to="mailto:joseph.steel.iv@gmail.com"
 						class="hover-black-blue-gradient"
 						target="_blank"
 					>
 						<img src="../assets/email.png" alt="linkedin logo" class="footer-icon-link" />
 						&nbsp;email
-					</router-link>
+					</a>
 				</li>
 			</ul>
 		</div>
