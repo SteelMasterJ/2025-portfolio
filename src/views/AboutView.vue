@@ -3,6 +3,7 @@
 		<h1>joey steel</h1>
 		<h2>i'm a front end web developer</h2>
 	</div>
+	<NavSlider />
 	<div class="lower-about">
 		<div>
 			based out of charlottesville, va, and specializing in vue.js. i've been working full time in
@@ -20,33 +21,26 @@
 	</div>
 </template>
 
-<script>
+<script setup>
 import { computed } from "vue";
+// Vue automatically registers the component for use in the template
+import NavSlider from "../components/NavSlider.vue";
 
-export default {
-	setup() {
-		const yearsSince2020 = computed(() => {
-			// Define the past date (April 1, 2020)
-			const pastDate = new Date("2020-04-01");
-			// Get the current date
-			const now = new Date();
+const yearsSince2020 = computed(() => {
+	// Define the past date (April 1, 2020)
+	const pastDate = new Date("2020-04-01");
+	// Get the current date
+	const now = new Date();
 
-			// Calculate the difference in milliseconds
-			const diffInMs = now.getTime() - pastDate.getTime();
+	// Calculate the difference in milliseconds
+	const diffInMs = now.getTime() - pastDate.getTime();
 
-			// Convert milliseconds to years
-			const years = diffInMs / (1000 * 60 * 60 * 24 * 365.25);
+	// Convert milliseconds to years
+	const years = diffInMs / (1000 * 60 * 60 * 24 * 365.25);
 
-			// Return the number of years, rounded down
-			return Math.floor(years);
-		});
-
-		// Expose the computed property to the template
-		return {
-			yearsSince2020,
-		};
-	},
-};
+	// Return the number of years, rounded down
+	return Math.floor(years);
+});
 </script>
 
 <style lang="scss" scoped>
