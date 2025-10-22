@@ -16,26 +16,32 @@
 </template>
 
 <script>
-import { ref } from "vue";
+import { ref, watchEffect } from "vue";
 export default {
-	setup() {
-		const navItems = ref([
-			{ id: "dashboard", name: "Dashboard" },
-			{ id: "settings", name: "Settings" },
-			{ id: "profile", name: "Profile" },
-			{ id: "messages", name: "Messages" },
-		]);
-
+	props: {
+		navItems: Array,
+		switchActiveComponent: Function,
+	},
+	setup(props) {
 		// The state variable that holds the ID of the currently active component.
-		const activeComponent = ref("dashboard");
+		const activeComponent = ref(null);
+
+		//   Use watchEffect to set the initial value of activeComponent.
+		//    This runs immediately and re-runs if props.navItems changes.
+		watchEffect(() => {
+			if (props.navItems && props.navItems.length > 0) {
+				// Set the initial active component to the ID of the first item
+				activeComponent.value = props.navItems[0].id;
+			}
+		});
 
 		// A method to update the activeComponent state when a nav button is clicked.
 		const setActiveComponent = (id) => {
 			activeComponent.value = id;
+			props.switchActiveComponent(id);
 		};
 
 		return {
-			navItems,
 			activeComponent,
 			setActiveComponent,
 		};
