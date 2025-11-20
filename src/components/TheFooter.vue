@@ -51,16 +51,25 @@ export default {
 
 <style scoped lang="scss">
 @use "../assets/variables" as *;
+
 .footer-bar {
 	width: 100%;
 	z-index: 1000;
 	padding-bottom: 1rem;
+
 	.container {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		max-width: 900px;
 		margin: 0 auto;
+		padding: 0 1rem;
+
+		@media (max-width: 425px) {
+			flex-direction: column;
+			gap: 1rem;
+			text-align: center;
+		}
 
 		.footer-links {
 			list-style: none;
@@ -68,8 +77,16 @@ export default {
 			margin: 0;
 			padding: 0;
 			color: $background-color;
+
+			@media (max-width: 425px) {
+				flex-direction: column;
+				align-items: center;
+				gap: 0.75rem;
+			}
+
 			li {
 				margin-left: 20px;
+
 				a {
 					display: flex;
 
@@ -84,6 +101,10 @@ export default {
 					.footer-icon-link {
 						opacity: 0.7;
 					}
+				}
+
+				@media (max-width: 425px) {
+					margin-left: 0;
 				}
 			}
 		}

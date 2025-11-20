@@ -1,6 +1,6 @@
 <template>
 	<div class="lower-about">
-		<div>more</div>
+		<div>a little more!</div>
 	</div>
 </template>
 

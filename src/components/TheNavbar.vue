@@ -23,7 +23,8 @@
 	width: 100%;
 	z-index: 1000;
 	background-color: $background-color;
-	padding: 1rem 0;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
 
 	.container {
 		display: flex;
@@ -31,6 +32,7 @@
 		align-items: center;
 		max-width: 900px;
 		margin: 0 auto;
+		padding: 0 1.5rem;
 
 		.logo {
 			color: $text-color;

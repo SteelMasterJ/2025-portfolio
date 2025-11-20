@@ -58,7 +58,8 @@ export default {
 	overflow-x: auto;
 	gap: 0.5rem;
 	padding: 0.5rem;
-	background-color: $text-color;
+	background-color: transparent;
+	margin-top: -4.75em;
 	-webkit-overflow-scrolling: touch;
 }
 .nav-slider-wrapper {
