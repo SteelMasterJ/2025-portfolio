@@ -1,6 +1,25 @@
 <template>
 	<div class="lower-about">
-		<div>a little more!</div>
+		<div>
+			In my personal life, my class would be a Ranger/Bard hybrid. I'm a trail runner and
+			ultramarathoner, and I also love exploring the backcountry as a hiker and backpacker. Playing
+			drums is a true passion for me, as is some guitar, getting lost in video games, and diving
+			deep into fantasy lore like Harry Potter or Lord of the Rings.
+		</div>
+		<ul class="links-list">
+			<li>
+				<a
+					href="https://ultrasignup.com/results_participant.aspx?fname=Joseph&lname=Steel"
+					target="_blank"
+					>My UltraMarathon results</a
+				>
+			</li>
+			<li>
+				<a href="https://open.spotify.com/artist/4cncWMR1Es6HRLdr2rSW9e" target="_blank"
+					>My band Slow Fix on Spotify</a
+				>
+			</li>
+		</ul>
 	</div>
 </template>
 
@@ -36,5 +55,31 @@ const yearsSince2020 = computed(() => {
 	font-size: 1.75rem;
 	padding: 1rem;
 	border-radius: 0 0 1rem 1rem;
+}
+.links-list {
+	list-style-type: none;
+	padding: 0;
+	margin: 3rem 0;
+	li {
+		margin-bottom: 2rem;
+		display: flex;
+		justify-content: center;
+	}
+
+	li:last-child {
+		margin-bottom: 0;
+	}
+	a {
+		background-color: $text-lighter;
+		color: $background-color;
+		padding: 10px 20px;
+		border-radius: 5px;
+		text-decoration: none;
+		display: inline-block;
+	}
+
+	a:hover {
+		background-color: $text-color;
+	}
 }
 </style>

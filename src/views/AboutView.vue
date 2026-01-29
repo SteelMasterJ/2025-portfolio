@@ -1,7 +1,7 @@
 <template>
 	<div class="about-page-top">
 		<h1>joey steel</h1>
-		<h2>i'm a front end web developer</h2>
+		<h2>front end web developer</h2>
 	</div>
 	<NavSlider :switchActiveComponent="switchActiveComponent" :navItems="navItems" />
 	<component :is="activeComponent" />
@@ -61,7 +61,7 @@ const yearsSince2020 = computed(() => {
 @use "../assets/variables" as *;
 .about-page-top {
 	/* Use the background-image property */
-	background-image: url("../assets/profilepic550-550.png");
+	background-image: url("../assets/profile-pic-2026.png");
 
 	/* These properties are crucial for controlling the photo's appearance */
 	background-size: cover; /* This makes the image fill the entire div, cropping if necessary */
@@ -103,5 +103,17 @@ const yearsSince2020 = computed(() => {
 			}
 		}
 	}
+}
+.about-page-top::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-image: url("your-image.jpg");
+	background-size: cover;
+	opacity: 0.3; /* Adjust this for the "fade" level */
+	z-index: -1; /* Puts the image behind your content */
 }
 </style>
