@@ -53,7 +53,7 @@ const yearsSince2020 = computed(() => {
 	flex-direction: column;
 	color: $text-color;
 	font-size: 1.75rem;
-	padding: 1rem;
+	padding: 3rem;
 	border-radius: 0 0 1rem 1rem;
 }
 </style>
