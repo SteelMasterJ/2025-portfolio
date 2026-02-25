@@ -25,7 +25,14 @@ body {
 	color: #333;
 }
 
+#app {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
 main {
+	flex: 1;
 	max-width: 900px;
 	margin: 0 auto;
 	padding: 20px;
