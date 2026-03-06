@@ -7,12 +7,14 @@
 			</p>
 			<p>
 				i've collected a wide number of different skills and have an appreciation for how they all
-				come together to create a polished product. my professional journey has given me a deep
-				understanding of the full web development lifecycle, from initial concept to deployment and
-				maintenance. i've honed my skills in node.js, building robust, scalable server-side
-				applications.my experience includes creating high-performance apis and microservices. i'm
-				also adept at using typescript to add static typing to my codebase, which has significantly
-				improved the reliability and maintainability of the projects i've worked on.
+				come together to create a polished product. in a world of AI driven development you need
+				someone who understands javascript, html, css, and vue.js from the ground up. my
+				professional journey has given me a deep understanding of the full web development
+				lifecycle, from initial concept to deployment and maintenance. i've honed my skills in
+				node.js, building robust, scalable server-side applications.my experience includes creating
+				high-performance apis and microservices. i'm also adept at using typescript to add static
+				typing to my codebase, which has significantly improved the reliability and maintainability
+				of the projects i've worked on.
 			</p>
 			<p>
 				furthermore, i have a passion for node package development, having created and published
@@ -55,5 +57,11 @@ const yearsSince2020 = computed(() => {
 	font-size: 1.75rem;
 	padding: 3rem;
 	border-radius: 0 0 1rem 1rem;
+}
+
+@media (max-width: 500px) {
+	.lower-about {
+		padding-top: 11.5rem;
+	}
 }
 </style>

@@ -60,4 +60,10 @@
 	padding: 3rem;
 	border-radius: 0 0 1rem 1rem;
 }
+
+@media (max-width: 500px) {
+	.lower-about {
+		padding-top: 11rem;
+	}
+}
 </style>

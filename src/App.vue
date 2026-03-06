@@ -15,6 +15,12 @@ import TheFooter from "./components/TheFooter.vue";
 </template>
 
 <style lang="scss">
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
 body {
 	font-family:
 		-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,

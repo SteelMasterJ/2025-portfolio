@@ -66,6 +66,8 @@ export default {
 	// padding: 0.5rem 0.6rem;
 	background-color: $text-lighter;
 	border-radius: 9999px;
+	display: flex;
+	flex-direction: row;
 }
 .nav-item {
 	margin: 0.5rem 0.7rem;
@@ -87,5 +89,26 @@ export default {
 	background-color: $background-color;
 	color: $text-color;
 	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 500px) {
+	.nav-slider {
+		margin-top: 0rem;
+		padding-left: 1rem;
+		padding-right: 1rem;
+		margin-bottom: -12.5rem;
+		position: relative;
+		z-index: 10;
+	}
+	.nav-slider-wrapper {
+		flex-direction: column;
+		border-radius: 1rem;
+		padding: 0.5rem;
+		width: 100%;
+	}
+	.nav-item {
+		margin: 0.25rem 0;
+		width: 100%;
+	}
 }
 </style>

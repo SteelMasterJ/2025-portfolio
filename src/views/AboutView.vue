@@ -39,22 +39,7 @@ const switchActiveComponent = (navItemID) => {
 	console.log(navItemID);
 	activeComponentID.value = navItemID;
 };
-
-const yearsSince2020 = computed(() => {
-	// Define the past date (April 1, 2020)
-	const pastDate = new Date("2020-04-01");
-	// Get the current date
-	const now = new Date();
-
-	// Calculate the difference in milliseconds
-	const diffInMs = now.getTime() - pastDate.getTime();
-
-	// Convert milliseconds to years
-	const years = diffInMs / (1000 * 60 * 60 * 24 * 365.25);
-
-	// Return the number of years, rounded down
-	return Math.floor(years);
-});
+58;
 </script>
 
 <style lang="scss" scoped>
