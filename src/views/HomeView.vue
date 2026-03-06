@@ -22,29 +22,28 @@
 <style lang="scss" scoped>
 @use "../assets/variables" as *;
 .home-page-top {
-	// /* Use the background-image property */
-	// background-image: url("../assets/profilepic550-550.png");
+	/* Use the background-image property */
+	background-image: url("../assets/profile-photo.png");
 
-	// /* These properties are crucial for controlling the photo's appearance */
-	// background-size: cover; /* This makes the image fill the entire div, cropping if necessary */
-	// background-position: center; /* This centers the image in the div */
-	// background-repeat: no-repeat; /* This prevents the image from tiling */
+	/* These properties are crucial for controlling the photo's appearance */
+	background-size: cover; /* This makes the image fill the entire div, cropping if necessary */
+	background-position: center; /* This centers the image in the div */
+	background-repeat: no-repeat; /* This prevents the image from tiling */
 
-	// /* Optional: Add a subtle overlay for better text readability */
-	// background-blend-mode: multiply; /* Blends the image with a background color */
-	// background-color: rgba(0, 0, 0, 0.4); /* A semi-transparent color */
+	/* Optional: Add a subtle overlay for better text readability */
+	background-blend-mode: multiply; /* Blends the image with a background color */
+	background-color: rgba(0, 0, 0, 0.4); /* A semi-transparent color */
 
 	min-height: 75vh;
 	display: flex;
-	justify-content: center;
+	justify-content: end;
 	flex-direction: column;
 	border-radius: 1rem 1rem 0 0;
-	background-color: $text-color;
 	padding: 1rem;
 	margin-top: 2rem;
 	h1 {
 		font-size: 5em;
-		color: $background-color;
+		color: $text-color;
 		width: 100%;
 		.joey {
 			&:hover {

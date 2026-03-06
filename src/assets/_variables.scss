@@ -24,7 +24,7 @@ a {
 .hover-black-blue-gradient {
 	text-decoration: none;
 	color: transparent; // Make the text color transparent
-	background-image: linear-gradient(to right, $background-color, $primary-color); // Your two colors
+	background-image: linear-gradient(to right, $text-color, $primary-color); // Your two colors
 	background-size: 300% 100%; // Double the width
 	background-position: 0 0; // Position to show the first color
 	-webkit-background-clip: text;
