@@ -55,6 +55,15 @@ const getImageUrl = (name) => {
 
 const projects = ref([
 	{
+		id: 0,
+		title: "This Portfolio Site",
+		description:
+			"The very site you are looking at! Built with a focus on clean design, smooth animations, and a modern space-themed aesthetic.",
+		tech: ["Vue 3", "Vite", "Vue Router", "SASS", "CSS3", "HTML5"],
+		link: "#",
+		image: getImageUrl("portfolio.png"),
+	},
+	{
 		id: 1,
 		title: "Old Portfolio",
 		description:
@@ -115,16 +124,60 @@ const projects = ref([
 .projects-page-top {
 	background-color: #333;
 	background-image:
+		/* White Stars */
 		radial-gradient(1px 1px at 25px 35px, white, rgba(255, 255, 255, 0)),
 		radial-gradient(1.5px 1.5px at 100px 60px, white, rgba(255, 255, 255, 0)),
+		radial-gradient(2px 2px at 150px 120px, white, rgba(255, 255, 255, 0)),
 		radial-gradient(1px 1px at 200px 150px, white, rgba(255, 255, 255, 0)),
+		radial-gradient(3px 3px at 250px 80px, white, rgba(255, 255, 255, 0)),
 		radial-gradient(1.5px 1.5px at 300px 50px, white, rgba(255, 255, 255, 0)),
+		radial-gradient(2.5px 2.5px at 350px 180px, white, rgba(255, 255, 255, 0)),
 		radial-gradient(1px 1px at 400px 250px, white, rgba(255, 255, 255, 0)),
+		radial-gradient(4px 4px at 450px 40px, white, rgba(255, 255, 255, 0)),
 		radial-gradient(2px 2px at 500px 100px, white, rgba(255, 255, 255, 0)),
-		radial-gradient(1px 1px at 600px 300px, white, rgba(255, 255, 255, 0)),
-		radial-gradient(1.5px 1.5px at 700px 80px, white, rgba(255, 255, 255, 0)),
+		radial-gradient(1px 1px at 550px 220px, white, rgba(255, 255, 255, 0)),
+		radial-gradient(1.5px 1.5px at 600px 300px, white, rgba(255, 255, 255, 0)),
+		radial-gradient(3px 3px at 650px 150px, white, rgba(255, 255, 255, 0)),
+		radial-gradient(1px 1px at 700px 80px, white, rgba(255, 255, 255, 0)),
+		radial-gradient(2px 2px at 750px 250px, white, rgba(255, 255, 255, 0)),
 		radial-gradient(1px 1px at 800px 200px, white, rgba(255, 255, 255, 0)),
-		radial-gradient(1.5px 1.5px at 900px 150px, white, rgba(255, 255, 255, 0));
+		radial-gradient(3.5px 3.5px at 850px 60px, white, rgba(255, 255, 255, 0)),
+		radial-gradient(1.5px 1.5px at 900px 150px, white, rgba(255, 255, 255, 0)),
+		radial-gradient(2px 2px at 950px 280px, white, rgba(255, 255, 255, 0)),
+		radial-gradient(1px 1px at 50px 400px, white, rgba(255, 255, 255, 0)),
+		radial-gradient(2.5px 2.5px at 200px 500px, white, rgba(255, 255, 255, 0)),
+		radial-gradient(1.5px 1.5px at 400px 600px, white, rgba(255, 255, 255, 0)),
+		radial-gradient(3px 3px at 600px 450px, white, rgba(255, 255, 255, 0)),
+		radial-gradient(1px 1px at 800px 550px, white, rgba(255, 255, 255, 0)),
+		radial-gradient(2px 2px at 900px 400px, white, rgba(255, 255, 255, 0)),
+		/* Orange Stars */
+			radial-gradient(2px 2px at 75px 200px, rgba(255, 200, 100, 1), rgba(255, 200, 100, 0)),
+		radial-gradient(3px 3px at 220px 330px, rgba(255, 200, 100, 0.8), rgba(255, 200, 100, 0)),
+		radial-gradient(1.5px 1.5px at 480px 520px, rgba(255, 200, 100, 0.9), rgba(255, 200, 100, 0)),
+		radial-gradient(2.5px 2.5px at 700px 400px, rgba(255, 200, 100, 1), rgba(255, 200, 100, 0)),
+		radial-gradient(4px 4px at 880px 220px, rgba(255, 200, 100, 0.7), rgba(255, 200, 100, 0)),
+		radial-gradient(2px 2px at 150px 750px, rgba(255, 200, 100, 1), rgba(255, 200, 100, 0)),
+		radial-gradient(3px 3px at 550px 850px, rgba(255, 200, 100, 0.8), rgba(255, 200, 100, 0)),
+		radial-gradient(1.5px 1.5px at 820px 920px, rgba(255, 200, 100, 0.9), rgba(255, 200, 100, 0)),
+		/* Blue Stars */
+			radial-gradient(2px 2px at 120px 450px, rgba(130, 210, 255, 1), rgba(130, 210, 255, 0)),
+		radial-gradient(3px 3px at 380px 80px, rgba(130, 210, 255, 0.8), rgba(130, 210, 255, 0)),
+		radial-gradient(1.5px 1.5px at 520px 280px, rgba(130, 210, 255, 0.9), rgba(130, 210, 255, 0)),
+		radial-gradient(2.5px 2.5px at 650px 650px, rgba(130, 210, 255, 1), rgba(130, 210, 255, 0)),
+		radial-gradient(4px 4px at 920px 500px, rgba(130, 210, 255, 0.7), rgba(130, 210, 255, 0)),
+		radial-gradient(2px 2px at 280px 900px, rgba(130, 210, 255, 1), rgba(130, 210, 255, 0)),
+		radial-gradient(3px 3px at 450px 700px, rgba(130, 210, 255, 0.8), rgba(130, 210, 255, 0)),
+		radial-gradient(1.5px 1.5px at 720px 120px, rgba(130, 210, 255, 0.9), rgba(130, 210, 255, 0)),
+		/* Additional White Stars for Density */
+			radial-gradient(1px 1px at 180px 40px, white, rgba(255, 255, 255, 0)),
+		radial-gradient(1px 1px at 320px 280px, white, rgba(255, 255, 255, 0)),
+		radial-gradient(1.5px 1.5px at 580px 40px, white, rgba(255, 255, 255, 0)),
+		radial-gradient(1px 1px at 740px 320px, white, rgba(255, 255, 255, 0)),
+		radial-gradient(2px 2px at 960px 80px, white, rgba(255, 255, 255, 0)),
+		radial-gradient(1px 1px at 40px 650px, white, rgba(255, 255, 255, 0)),
+		radial-gradient(1.5px 1.5px at 260px 420px, white, rgba(255, 255, 255, 0)),
+		radial-gradient(1px 1px at 500px 750px, white, rgba(255, 255, 255, 0)),
+		radial-gradient(2px 2px at 780px 850px, white, rgba(255, 255, 255, 0));
 	background-repeat: repeat;
 	background-size: 1000px 1000px;
 	min-height: 35vh;
