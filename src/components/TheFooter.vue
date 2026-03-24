@@ -76,7 +76,6 @@ export default {
 			display: flex;
 			margin: 0;
 			padding: 0;
-			color: $background-color;
 
 			@media (max-width: 425px) {
 				flex-direction: column;

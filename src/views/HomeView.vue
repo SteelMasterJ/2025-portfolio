@@ -1,14 +1,14 @@
 <template>
 	<div class="home-page-top">
 		<h1>
-			hello. i'm <router-link to="/about" class="hover-black-blue-gradient">joey</router-link>
+			hello. i'm <router-link to="/about" class="hover-white-blue-gradient">joey</router-link>
 		</h1>
 		<ul class="nav-links">
-			<li><router-link to="/about" class="hover-black-blue-gradient">developer.</router-link></li>
+			<li><router-link to="/about" class="hover-white-blue-gradient">developer.</router-link></li>
 			<li>
-				<router-link to="/projects" class="hover-black-blue-gradient">designer.</router-link>
+				<router-link to="/projects" class="hover-white-blue-gradient">designer.</router-link>
 			</li>
-			<li><router-link to="/contact" class="hover-black-blue-gradient">artist.</router-link></li>
+			<li><router-link to="/contact" class="hover-white-blue-gradient">artist.</router-link></li>
 		</ul>
 	</div>
 	<div class="lower-home">
