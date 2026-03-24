@@ -58,9 +58,9 @@ const projects = ref([
 		id: 0,
 		title: "This Portfolio Site",
 		description:
-			"The very site you are looking at! Built with a focus on clean design, smooth animations, and a modern space-themed aesthetic.",
-		tech: ["Vue 3", "Vite", "Vue Router", "SASS", "CSS3", "HTML5"],
-		link: "#",
+			"The very site you are looking at! A super lightweight, fast, and modern portfolio site built with a focus on clean design, smooth animations, and a modern aesthetic.",
+		tech: ["Vue 3", "Vite", "Vue Router", "CSS3", "HTML5"],
+		link: "https://github.com/SteelMasterJ/2025-portfolio",
 		image: getImageUrl("portfolio.png"),
 	},
 	{
@@ -79,7 +79,7 @@ const projects = ref([
 			"CSS",
 			"HTML",
 		],
-		link: "#",
+		link: "https://github.com/SteelMasterJ/joeysteel2020portfolio",
 		image: getImageUrl("old-portfolio.png"),
 	},
 	{
@@ -97,7 +97,7 @@ const projects = ref([
 			"CSS",
 			"HTML",
 		],
-		link: "#",
+		link: "https://chic-daifuku-5cc84f.netlify.app/",
 		image: getImageUrl("pokedragger.png"),
 	},
 	{
@@ -106,7 +106,7 @@ const projects = ref([
 		description:
 			"A fully functional shopping cart experience with state management and product listings.",
 		tech: ["React", "Redux", "React Router", "Tailwind", "Node.js", "Axios", "Jest", "CSS", "HTML"],
-		link: "#",
+		link: "https://naughty-lalande-d280d5.netlify.app/",
 		image: getImageUrl("shoppingcartapp.png"),
 	},
 	{
@@ -114,7 +114,7 @@ const projects = ref([
 		title: "Stock Number",
 		description: "An application designed for tracking stock levels or numbers efficiently.",
 		tech: ["React", "Bootstrap", "Node.js", "Axios", "Jest", "CSS", "HTML"],
-		link: "#",
+		link: "https://agitated-einstein-65437c.netlify.app/",
 		image: getImageUrl("stocknumber.png"),
 	},
 ]);
@@ -298,6 +298,10 @@ const projects = ref([
 	display: flex;
 	flex-direction: column;
 	flex-grow: 1;
+	background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>');
+	background-repeat: no-repeat;
+	background-position: right 2rem center;
+	padding-right: 5rem;
 }
 
 .project-content h4 {

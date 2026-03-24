@@ -52,24 +52,30 @@ import { ref } from "vue";
 const contacts = ref([
 	{
 		id: 0,
+		title: "Resume",
+		subtitle: "View my resume",
+		link: "https://docs.google.com/document/d/1WwGzPfILkZxpMS_i6ASmZxlvf38ktxyn0_KKynkxZfU/edit?usp=sharing",
+	},
+	{
+		id: 1,
 		title: "Email",
 		subtitle: "Reach out via email",
 		link: "mailto:joseph.steel@example.com",
 	},
 	{
-		id: 1,
+		id: 2,
 		title: "LinkedIn",
 		subtitle: "Connect with me professionally",
 		link: "https://linkedin.com/",
 	},
 	{
-		id: 2,
+		id: 3,
 		title: "GitHub",
 		subtitle: "Check out my repositories",
 		link: "https://github.com/SteelMasterJ",
 	},
 	{
-		id: 3,
+		id: 4,
 		title: "Spotify",
 		subtitle: "My band slow fix on Spotify",
 		link: "https://open.spotify.com/artist/4cncWMR1Es6HRLdr2rSW9e",
