@@ -46,16 +46,14 @@
 
 <script setup></script>
 
-<style lang="scss" scoped>
-@use "../assets/variables" as *;
+<style scoped>
 .lower-about {
-	// background-color: $background-color;
 	background-image: url("../assets/nightsky.jpg");
 	min-height: 25vh;
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
-	color: $text-color;
+	color: var(--text-color);
 	font-size: 1.75rem;
 	padding: 3rem;
 	border-radius: 0 0 1rem 1rem;

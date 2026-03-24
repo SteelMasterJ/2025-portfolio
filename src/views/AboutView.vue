@@ -42,8 +42,7 @@ const switchActiveComponent = (navItemID) => {
 58;
 </script>
 
-<style lang="scss" scoped>
-@use "../assets/variables" as *;
+<style scoped>
 .about-page-top {
 	/* Use the background-image property */
 	background-image: url("../assets/profile-pic-2026.png");
@@ -64,31 +63,29 @@ const switchActiveComponent = (navItemID) => {
 	border-radius: 1rem 1rem 0 0;
 	padding: 1rem;
 	margin-top: 2rem;
-	h1 {
-		font-size: 5em;
-		color: $text-color;
-	}
-
-	h2 {
-		font-size: 3em;
-		color: $text-color;
-	}
-
-	.nav-links {
-		list-style: none;
-		display: flex;
-		margin: 0;
-		padding: 0;
-
-		li {
-			font-size: 2rem;
-			margin-left: 20px;
-			&:first-child {
-				margin-left: 0;
-			}
-		}
-	}
 }
+.about-page-top h1 {
+	font-size: 5em;
+	color: var(--text-color);
+}
+.about-page-top h2 {
+	font-size: 3em;
+	color: var(--text-color);
+}
+.about-page-top .nav-links {
+	list-style: none;
+	display: flex;
+	margin: 0;
+	padding: 0;
+}
+.about-page-top .nav-links li {
+	font-size: 2rem;
+	margin-left: 20px;
+}
+.about-page-top .nav-links li:first-child {
+	margin-left: 0;
+}
+
 .about-page-top::before {
 	content: "";
 	position: absolute;

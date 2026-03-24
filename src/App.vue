@@ -14,7 +14,45 @@ import TheFooter from "./components/TheFooter.vue";
 	</div>
 </template>
 
-<style lang="scss">
+<style>
+:root {
+	--primary-color: #71d7ff;
+	--text-color: #fff;
+	--text-lighter: #e7e7e7;
+	--background-color: #333;
+}
+
+a.hover-white-blue-gradient {
+	text-decoration: none;
+	color: transparent;
+	background-image: linear-gradient(to right, var(--text-color), var(--primary-color));
+	background-size: 300% 100%;
+	background-position: 0 0;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	transition: background-position 0.3s ease;
+}
+a.hover-white-blue-gradient:hover {
+	background-position: 100% 0;
+}
+
+.hover-black-blue-gradient {
+	text-decoration: none;
+	color: transparent;
+	background-image: linear-gradient(to right, var(--background-color), var(--primary-color));
+	background-size: 300% 100%;
+	background-position: 0 0;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	transition: background-position 0.3s ease;
+}
+.hover-black-blue-gradient:hover {
+	background-position: 100% 0;
+	cursor: pointer;
+}
+
 *,
 *::before,
 *::after {

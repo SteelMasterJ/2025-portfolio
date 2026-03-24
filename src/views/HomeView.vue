@@ -19,8 +19,7 @@
 	</div>
 </template>
 
-<style lang="scss" scoped>
-@use "../assets/variables" as *;
+<style scoped>
 .home-page-top {
 	/* Use the background-image property */
 	background-image: url("../assets/profile-photo.png");
@@ -41,40 +40,38 @@
 	border-radius: 1rem 1rem 0 0;
 	padding: 1rem;
 	margin-top: 2rem;
-	h1 {
-		font-size: 5em;
-		color: $text-color;
-		width: 100%;
-		.joey {
-			&:hover {
-				cursor: default;
-			}
-		}
-	}
-
-	.nav-links {
-		list-style: none;
-		display: flex;
-		margin: 0;
-		padding: 0;
-
-		li {
-			font-size: 2rem;
-			margin-left: 20px;
-			&:first-child {
-				margin-left: 0;
-			}
-		}
-	}
 }
+.home-page-top h1 {
+	font-size: 5em;
+	color: var(--text-color);
+	width: 100%;
+}
+.home-page-top h1 .joey:hover {
+	cursor: default;
+}
+
+.home-page-top .nav-links {
+	list-style: none;
+	display: flex;
+	margin: 0;
+	padding: 0;
+}
+
+.home-page-top .nav-links li {
+	font-size: 2rem;
+	margin-left: 20px;
+}
+.home-page-top .nav-links li:first-child {
+	margin-left: 0;
+}
+
 .lower-home {
-	// background-color: $background-color;
 	background-image: url("../assets/nightsky.jpg");
 	min-height: 25vh;
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
-	color: $text-color;
+	color: var(--text-color);
 	font-size: 1.75rem;
 	padding: 1rem;
 	border-radius: 0 0 1rem 1rem;

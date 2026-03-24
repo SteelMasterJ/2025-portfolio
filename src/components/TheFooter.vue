@@ -49,64 +49,64 @@ export default {
 };
 </script>
 
-<style scoped lang="scss">
-@use "../assets/variables" as *;
-
+<style scoped>
 .footer-bar {
 	width: 100%;
 	z-index: 1000;
 	padding-bottom: 1rem;
+}
+.footer-bar .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 0 1rem;
+}
+@media (max-width: 425px) {
+	.footer-bar .container {
+		flex-direction: column;
+		gap: 1rem;
+		text-align: center;
+	}
+}
 
-	.container {
-		display: flex;
-		justify-content: space-between;
+.footer-bar .container .footer-links {
+	list-style: none;
+	display: flex;
+	margin: 0;
+	padding: 0;
+}
+
+@media (max-width: 425px) {
+	.footer-bar .container .footer-links {
+		flex-direction: column;
 		align-items: center;
-		max-width: 900px;
-		margin: 0 auto;
-		padding: 0 1rem;
+		gap: 0.75rem;
+	}
+}
 
-		@media (max-width: 425px) {
-			flex-direction: column;
-			gap: 1rem;
-			text-align: center;
-		}
+.footer-bar .container .footer-links li {
+	margin-left: 20px;
+}
 
-		.footer-links {
-			list-style: none;
-			display: flex;
-			margin: 0;
-			padding: 0;
+.footer-bar .container .footer-links li a {
+	display: flex;
+}
 
-			@media (max-width: 425px) {
-				flex-direction: column;
-				align-items: center;
-				gap: 0.75rem;
-			}
+.footer-bar .container .footer-links li a .footer-icon-link {
+	height: 1rem;
+	align-self: center;
+	transition: opacity 0.3s ease;
+}
 
-			li {
-				margin-left: 20px;
+.footer-bar .container .footer-links li:hover .footer-icon-link {
+	opacity: 0.7;
+}
 
-				a {
-					display: flex;
-
-					.footer-icon-link {
-						height: 1rem;
-						align-self: center;
-						transition: opacity 0.3s ease;
-					}
-				}
-
-				&:hover {
-					.footer-icon-link {
-						opacity: 0.7;
-					}
-				}
-
-				@media (max-width: 425px) {
-					margin-left: 0;
-				}
-			}
-		}
+@media (max-width: 425px) {
+	.footer-bar .container .footer-links li {
+		margin-left: 0;
 	}
 }
 </style>

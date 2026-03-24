@@ -49,8 +49,7 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
-@use "../assets/variables" as *;
+<style scoped>
 .nav-slider {
 	display: flex;
 	justify-content: center;
@@ -63,8 +62,7 @@ export default {
 	-webkit-overflow-scrolling: touch;
 }
 .nav-slider-wrapper {
-	// padding: 0.5rem 0.6rem;
-	background-color: $text-lighter;
+	background-color: var(--text-lighter);
 	border-radius: 9999px;
 	display: flex;
 	flex-direction: row;
@@ -76,18 +74,18 @@ export default {
 	cursor: pointer;
 	transition: all 0.4s ease-in-out;
 	border: 0;
-	color: $background-color;
+	color: var(--background-color);
 	white-space: nowrap;
-	background-color: $text-lighter;
+	background-color: var(--text-lighter);
 	font-size: 1rem;
 	font-weight: 600;
 }
 .nav-item:hover {
-	background-color: $text-color;
+	background-color: var(--text-color);
 }
 .nav-item.active {
-	background-color: $background-color;
-	color: $text-color;
+	background-color: var(--background-color);
+	color: var(--text-color);
 	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 

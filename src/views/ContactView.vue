@@ -77,8 +77,7 @@ const contacts = ref([
 ]);
 </script>
 
-<style lang="scss" scoped>
-@use "../assets/variables" as *;
+<style scoped>
 .projects-page-top {
 	background-color: #333;
 	background-image:
@@ -198,8 +197,8 @@ const contacts = ref([
 }
 
 .contact-card {
-	background-color: $text-lighter;
-	color: $background-color;
+	background-color: var(--text-lighter);
+	color: var(--background-color);
 	padding: 1.5rem 2rem;
 	border-radius: 0.75rem;
 	text-decoration: none;
@@ -217,7 +216,7 @@ const contacts = ref([
 }
 
 .contact-card:hover {
-	background-color: $text-color;
+	background-color: var(--text-color);
 	transform: translateY(-3px);
 }
 

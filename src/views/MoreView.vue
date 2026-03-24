@@ -25,16 +25,14 @@
 
 <script setup></script>
 
-<style lang="scss" scoped>
-@use "../assets/variables" as *;
+<style scoped>
 .lower-about {
-	// background-color: $background-color;
 	background-image: url("../assets/nightsky.jpg");
 	min-height: 25vh;
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
-	color: $text-color;
+	color: var(--text-color);
 	font-size: 1.75rem;
 	padding: 3rem;
 	border-radius: 0 0 1rem 1rem;
@@ -50,33 +48,30 @@
 	list-style-type: none;
 	padding: 0;
 	margin: 3rem 0;
-	li {
-		margin-bottom: 2rem;
-		display: flex;
-		justify-content: center;
-	}
-
-	li:last-child {
-		margin-bottom: 0;
-	}
-	a {
-		background-color: $text-lighter;
-		color: $background-color;
-		padding: 10px 20px;
-		border-radius: 5px;
-		text-decoration: none;
-		display: inline-block;
-	}
-
-	a:hover {
-		background-color: $text-color;
-	}
-
-	a[href^="http"] {
-		padding-right: 2.5rem;
-		background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>');
-		background-repeat: no-repeat;
-		background-position: right 1rem center;
-	}
+}
+.links-list li {
+	margin-bottom: 2rem;
+	display: flex;
+	justify-content: center;
+}
+.links-list li:last-child {
+	margin-bottom: 0;
+}
+.links-list a {
+	background-color: var(--text-lighter);
+	color: var(--background-color);
+	padding: 10px 20px;
+	border-radius: 5px;
+	text-decoration: none;
+	display: inline-block;
+}
+.links-list a:hover {
+	background-color: var(--text-color);
+}
+.links-list a[href^="http"] {
+	padding-right: 2.5rem;
+	background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>');
+	background-repeat: no-repeat;
+	background-position: right 1rem center;
 }
 </style>
