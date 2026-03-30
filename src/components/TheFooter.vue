@@ -5,7 +5,7 @@
 			<ul class="footer-links">
 				<li>
 					<a
-						to="https://www.linkedin.com/in/joseph-steel-6271a955/"
+						href="https://www.linkedin.com/in/joseph-steel-6271a955/"
 						class="hover-black-blue-gradient"
 						target="_blank"
 					>
@@ -15,7 +15,7 @@
 				</li>
 				<li>
 					<a
-						to="https://docs.google.com/document/d/1MXtAspclKKkcOSu9L5TZgQZmOr-Ep_IAriPMn7QSSpc/edit?pli=1&tab=t.0"
+						href="https://docs.google.com/document/d/1WwGzPfILkZxpMS_i6ASmZxlvf38ktxyn0_KKynkxZfU/edit?usp=sharing"
 						class="hover-black-blue-gradient"
 						target="_blank"
 					>
@@ -24,11 +24,7 @@
 					</a>
 				</li>
 				<li>
-					<a
-						to="mailto:joseph.steel.iv@gmail.com"
-						class="hover-black-blue-gradient"
-						target="_blank"
-					>
+					<a href="mailto:joseph.steel.iv@gmail.com" class="hover-black-blue-gradient">
 						<img src="../assets/email.png" alt="linkedin logo" class="footer-icon-link" />
 						&nbsp;email
 					</a>
