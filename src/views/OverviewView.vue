@@ -2,22 +2,22 @@
 	<div class="lower-about">
 		<div>
 			<p>
-				based out of charlottesville, va, and specializing in vue.js. i've been working full time in
+				Based out of Charlottesville, VA, and specializing in Vue.js. I've been working full time in
 				web development for {{ yearsSince2020 }}+ years.
 			</p>
 			<p>
-				i've collected a wide number of different skills and have an appreciation for how they all
-				come together to create a polished product. in a world of AI driven development you need
-				someone who understands javascript, html, css, and vue.js from the ground up. my
+				I've collected a wide number of different skills and have an appreciation for how they all
+				come together to create a polished product. In a world of AI driven development you need
+				someone who understands JavaScript, HTML, CSS, and Vue.js from the ground up. My
 				professional journey has given me a deep understanding of the full web development
-				lifecycle, from initial concept to deployment and maintenance. i've honed my skills in
-				node.js, building robust, scalable server-side applications.my experience includes creating
-				high-performance apis and microservices. i'm also adept at using typescript to add static
+				lifecycle, from initial concept to deployment and maintenance. I've honed my skills in
+				Node.js, building robust, scalable server-side applications. My experience includes creating
+				high-performance APIs and microservices. I'm also adept at using TypeScript to add static
 				typing to my codebase, which has significantly improved the reliability and maintainability
-				of the projects i've worked on.
+				of the projects I've worked on.
 			</p>
 			<p>
-				furthermore, i have a passion for node package development, having created and published
+				Furthermore, I have a passion for Node package development, having created and published
 				several packages that are used in various projects, streamlining common tasks and promoting
 				code reuse.
 			</p>
